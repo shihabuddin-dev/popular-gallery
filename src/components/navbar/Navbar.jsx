@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='container mx-auto cursor-pointer py-2 px-2'>
             <div className="navbar bg-base-100 flex justify-between items-center">
                 <div className="">
-                    <a className="text-2xl md:text-3xl text-blue-700">Auction<span className='font-bold text-[#FCD141]'>Gallery</span> </a>
+                    <a className="text-2xl md:text-3xl text-blue-700">Popular<span className='font-bold text-[#FCD141]'>Gallery</span> </a>
                 </div>
                 <ul className='hidden md:flex gap-6 items-center text-xl'>
                     <li className='hover:text-blue-700'>Home</li>
