@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Vintage Leica M3 Camera",
+        "description": "Iconic vintage 35mm rangefinder camera, renowned for build quality and legendary German optics.",
+        "currentBidPrice": 2850,
+        "timeLeft": "1 Days Left",
+        "bidsCount": 11,
+        "image": "https://i.ibb.co/N24FXBCk/Bid1-min.png"
+    },
+    {
+        "id": 2,
+        "title": "1965 Gibson SG Standard Electric Guitar",
+        "description": "Classic 1965 Gibson SG Standard electric guitar. Famous cherry finish and powerful rock sound.",
+        "currentBidPrice": 1230,
+        "timeLeft": "2 Days Left",
+        "bidsCount": 17,
+        "image": "https://i.ibb.co/PG31J7mw/Bid2-min.png"
+    },
+    {
+        "id": 3,
+        "title": "Original Apple Macintosh 128K (1984)",
+        "description": "Groundbreaking original Apple Macintosh 128K personal computer from 1984. A true tech history icon.",
+        "currentBidPrice": 2399,
+        "timeLeft": "2 Days Left",
+        "bidsCount": 10,
+        "image": "https://i.ibb.co/fYrkPZBx/Bid3-min.png"
+    },
+    {
+        "id": 4,
+        "title": "Rolex Submariner 16610",
+        "description": "Timeless Rolex Submariner 16610 dive watch. A luxury icon known for its robust design.",
+        "currentBidPrice": 3500,
+        "timeLeft": "3 Days Left",
+        "bidsCount": 8,
+        "image": "https://i.ibb.co/4ntx39DB/Bid4-min.png"
+    },
+    {
+        "id": 5,
+        "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+        "description": "Rare, collectible first edition copy of F. Scott Fitzgerald's classic American novel, The Great Gatsby.",
+        "currentBidPrice": 2900,
+        "timeLeft": "4 Days Left",
+        "bidsCount": 7,
+        "image": "https://i.ibb.co/qLsWWkGP/Bid6-min.png"
+    },
+    {
+        "id": 6,
+        "title": "Mid-Century Modern Eames Lounge Chair",
+        "description": "Authentic Mid-Century Modern Eames Lounge Chair and Ottoman. A timeless design classic piece.",
+        "currentBidPrice": 1100,
+        "timeLeft": "5 Days Left",
+        "bidsCount": 15,
+        "image": "https://i.ibb.co/9kdQXBTt/Bid5-min.png"
+    },
+    {
+        "id": 7,
+        "title": "Banksy Original Screen Print",
+        "description": "Original signed screen print by the elusive contemporary street artist Banksy. Highly collectible artwork.",
+        "currentBidPrice": 1000,
+        "timeLeft": "5 Days Left",
+        "bidsCount": 12,
+        "image": "https://i.ibb.co/b5BzSFYT/Bid7-min.png"
+    }
+]
