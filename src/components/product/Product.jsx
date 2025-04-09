@@ -24,7 +24,7 @@ const Product = ({ product, handleProductsAddToCart, handlePriceCount }) => {
                     <td>
                         <button disabled={color ? true : false}
                             onClick={handleChangeColor}
-                            className='text-2xl pl-8 py-4 px-4 '>
+                            className='text-3xl pl-8 py-4 px-4 '>
                             {color ? <IoMdHeart className='text-red-600 cursor-not-allowed' /> : <IoIosHeartEmpty className='cursor-pointer' />}
                         </button>
                     </td>

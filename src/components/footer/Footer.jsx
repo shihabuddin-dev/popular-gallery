@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='container mx-auto px-2 text-center py-12 md:py-16 flex justify-center items-center flex-col space-y-2 cursor-pointer'>
-            <a className="text-3xl text-blue-700">Auction<span className='font-bold text-[#FCD141]'>Gallery</span> </a>
-            <ul className='flex gap-4 items-center text-[22px]'>
+            <h2 className="text-3xl text-blue-700">Auction<span className='font-bold text-[#FCD141]'>Gallery</span> </h2>
+            <ul className='flex gap-4 items-center text-xl md:text-[22px]'>
                 <li className='hover:text-blue-700'>Bid.</li>
                 <li className='hover:text-blue-700'>Win.</li>
                 <li className='hover:text-blue-700'>Won.</li>

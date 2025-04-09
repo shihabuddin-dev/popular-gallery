@@ -2,7 +2,8 @@
 import Product from "../product/Product";
 import History from "../history/History";
 import { useState } from "react";
-import { FiHeart } from "react-icons/fi";
+import { IoMdHeartEmpty, IoMdHeartHalf } from "react-icons/io";
+import { IoHeart } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Products = ({ products }) => {
@@ -10,7 +11,7 @@ const Products = ({ products }) => {
     const [priceCount, setPriceCount] = useState(0)
     const handleProductsAddToCart = (product) => {
         setAddCart([...addCart, product])
-        toast.success('Added To Favorite', { position: 'top-center', autoClose: 1500, theme: 'colored' })
+        toast.success('Added To Favorite', { position: 'top-center', autoClose: 1100, theme: 'colored' })
     }
 
     const handlePriceCount = (currentBidPrice) => {
@@ -19,12 +20,12 @@ const Products = ({ products }) => {
     const handlePriceDec = (currentBidPrice) => {
         setPriceCount(priceCount - currentBidPrice)
     }
-
     const handleRemoveProduct = (id, currentBidPrice) => {
         const remainCart = addCart.filter(cart => cart.id !== id)
         setAddCart(remainCart)
-        toast.warn('Deleted From Favorite', { position: 'top-center', autoClose: 1500, theme: 'colored' })
+        toast.warn('Deleted From Favorite', { position: 'top-center', autoClose: 1100, theme: 'colored' })
         handlePriceDec(currentBidPrice)
+
     }
     return (
         <div className='bg-[#EBF0F5]'>
@@ -54,7 +55,18 @@ const Products = ({ products }) => {
                         </table>
                     </div>
                     <div className="md:w-[30%] bg-white rounded-xl ">
-                        <p className='text-3xl flex gap-4 items-center justify-center cursor-pointer py-6 px-4 border-b-1 border-[#DCE5F3]'> <FiHeart /> Favorite Items</p>
+
+                        <p className='text-3xl text-[#0E2954]  flex gap-4 items-center justify-center cursor-pointer py-6 px-4 border-b-1 border-[#DCE5F3]'>
+                            {
+                                addCart.length < 1 && (<span><IoMdHeartEmpty />  </span>)
+                            }
+                            {
+                                addCart.length >= 1 && addCart.length <= 6 && (<span>  <IoMdHeartHalf /> </span>)
+                            }
+                            {
+                                addCart.length >= 7 && (<span>  <IoHeart /></span>)
+                            }
+                            Favorite Items</p>
                         {
                             addCart.map(cartProduct =>
                                 <History
@@ -64,11 +76,17 @@ const Products = ({ products }) => {
 
                                 ></History>)
                         }
+                        {!priceCount && (
+                            <div className="py-6 px-18 space-y-2 border-y-1 border-[#DCE5F3] text-center ">
+                                <h2 className="text-2xl font-medium">No favorites yet</h2>
+                                <p className="font-medium text-gray-900">Click the heart icon on any item to add it to your favorites</p>
+                            </div>
+                        )
+                        }
                         <div className="flex justify-around text-[26px] mt-4">
                             <h2 className="font-medium">Total bids Amount</h2>
-                            <p className="font-semibold">$ {priceCount}</p>
+                            <p className="font-semibold">${priceCount}</p>
                         </div>
-
                     </div>
                 </div>
 
