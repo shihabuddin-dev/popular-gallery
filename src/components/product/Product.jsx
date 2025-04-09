@@ -14,17 +14,17 @@ const Product = ({ product, handleProductsAddToCart, handlePriceCount }) => {
     return (
         <>
             <tbody className='border-b-1 border-[#DCE5F3] hover:bg-gray-50'>
-                <tr className='text-lg font-medium'>
+                <tr className='md:text-lg font-medium'>
                     <td className='flex gap-4 items-center py-4 px-4'>
-                        <img className='w-24 h-24 object-cover rounded-lg' src={image} alt="" />
-                        <span className='py-4 px-4'>{title}</span>
+                        <img className='w-16 md:w-24 h-16 md:h-24 object-cover rounded-lg' src={image} alt="" />
+                        <span className='py-4 px-4 hidden md:flex'>{title}</span>
                     </td>
                     <td className='py-4 px-4'> ${currentBidPrice}</td>
                     <td> {timeLeft}</td>
                     <td>
                         <button disabled={color ? true : false}
                             onClick={handleChangeColor}
-                            className='text-3xl pl-8 py-4 px-4 '>
+                            className='text-3xl md:pl-8 py-4 px-4 '>
                             {color ? <IoMdHeart className='text-red-600 cursor-not-allowed' /> : <IoIosHeartEmpty className='cursor-pointer active:animate-ping' />}
                         </button>
                     </td>
