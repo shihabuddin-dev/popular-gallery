@@ -19,7 +19,7 @@ const History = ({ cartProduct, handleRemoveProduct }) => {
                 </div>
                 <button
                     onClick={() => handleRemoveProduct(cartProduct.id, currentBidPrice)}
-                    className='text-xl font-bold hover:text-red-600 cursor-pointer hover:bg-red-100 rounded-full p-1 text-right'> <RxCross2 /></button>
+                    className='text-xl font-bold hover:text-red-600 cursor-pointer hover:bg-red-100 rounded-full p-1 text-right'> <RxCross2 className='active:animate-ping' /></button>
             </div>
         </div>
     );

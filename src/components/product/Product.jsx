@@ -25,11 +25,10 @@ const Product = ({ product, handleProductsAddToCart, handlePriceCount }) => {
                         <button disabled={color ? true : false}
                             onClick={handleChangeColor}
                             className='text-3xl pl-8 py-4 px-4 '>
-                            {color ? <IoMdHeart className='text-red-600 cursor-not-allowed' /> : <IoIosHeartEmpty className='cursor-pointer' />}
+                            {color ? <IoMdHeart className='text-red-600 cursor-not-allowed' /> : <IoIosHeartEmpty className='cursor-pointer active:animate-ping' />}
                         </button>
                     </td>
                 </tr>
-
             </tbody>
 
         </>

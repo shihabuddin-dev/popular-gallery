@@ -25,6 +25,9 @@ function App() {
       {
         !loading && <Products products={products}></Products>
       }
+      {
+        loading && <p className='text-center'>Loading....</p>
+      }
       <Footer></Footer>
     </>
   )
